@@ -26,6 +26,8 @@ Booking Core is a Booking System based on Laravel, designed for a travel website
 
 6. Razorpay
 
+7. Peach Gateway
+
 ### Get Support: [Click here](https://bookingcore.co)
 
 ### Join our Discord: [https://discord.gg/FBP3TuFXCe](https://discord.gg/FBP3TuFX)
