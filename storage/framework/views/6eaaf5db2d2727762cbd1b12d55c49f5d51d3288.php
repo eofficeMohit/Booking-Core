@@ -1,5 +1,5 @@
 <script>
-    var bookingCore = {
+    var planner = {
         url:'<?php echo e(url( app_get_locale() )); ?>',
         url_root:'<?php echo e(url('')); ?>',
         admin_url:'<?php echo e(route('admin.index')); ?>',
@@ -35,13 +35,13 @@
         module:{}
     };
     <?php if(auth()->user()): ?>
-        bookingCore.media = {
+        planner.media = {
         groups:<?php echo json_encode(config('bc.media.groups')); ?>,
     }
     <?php endif; ?>
     <?php $__currentLoopData = get_bookable_services(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $id=>$class): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <?php if($class::isEnable()): ?>
-            bookingCore.module.<?php echo e($id); ?> = '<?php echo e(route($id.'.search')); ?>';
+            planner.module.<?php echo e($id); ?> = '<?php echo e(route($id.'.search')); ?>';
         <?php endif; ?>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     var i18n = {

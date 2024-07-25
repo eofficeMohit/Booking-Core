@@ -180,7 +180,7 @@
                 return $(this).val();
             }).get();
             if(!ids || !ids.length){
-                bookingCoreApp.showError("{{__('Please select at lease one item')}}")
+                plannerApp.showError("{{__('Please select at lease one item')}}")
                 return;
             }
             $('#bulkActionModal').modal('show');
@@ -198,10 +198,10 @@
                 return $(this).val();
             }).get();
             if(!ids || !ids.length){
-                bookingCoreApp.showError("{{__('Please select at lease one item')}}")
+                plannerApp.showError("{{__('Please select at lease one item')}}")
                 return;
             }
-            bookingCoreApp.showConfirm({
+            plannerApp.showConfirm({
                 message:'{{__('Do you want to delete those items?')}}',
                 callback:function (result) {
                     if(result){
@@ -216,7 +216,7 @@
                             success:function (json) {
                                 btn.removeClass('loading');
 
-                                bookingCoreApp.showAjaxMessage(json);
+                                plannerApp.showAjaxMessage(json);
 
                                 if(json.status){
                                     window.location.reload();
@@ -224,7 +224,7 @@
                             },
                             error:function (e) {
                                 btn.removeClass('loading');
-                                bookingCoreApp.showAjaxError(e);
+                                plannerApp.showAjaxError(e);
                             }
                         })
                     }
@@ -237,14 +237,14 @@
             var form = $(this).closest('.modal');
             var status = form.find('[name=action]').val();
             if(!status){
-                bookingCoreApp.showError("{{__("Status is empty")}}");
+                plannerApp.showError("{{__("Status is empty")}}");
                 return;
             }
             var ids = $('.check-item:checked').map(function(){
                 return $(this).val();
             }).get();
             if(!ids || !ids.length){
-                bookingCoreApp.showError("{{__('Please select at lease one item')}}")
+                plannerApp.showError("{{__('Please select at lease one item')}}")
                 return;
             }
 
@@ -270,7 +270,7 @@
                         form.modal('hide');
                     }
 
-                    bookingCoreApp.showAjaxMessage(json);
+                    plannerApp.showAjaxMessage(json);
 
                     if(json.status){
                         window.setTimeout(function () {
@@ -280,7 +280,7 @@
                 },
                 error:function (e) {
                     form.removeClass('loading');
-                    bookingCoreApp.showAjaxError(e);
+                    plannerApp.showAjaxError(e);
                 }
             })
 

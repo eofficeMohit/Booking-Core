@@ -5,6 +5,7 @@
 {{--Multi Language--}}
 @if(!empty($languages) && setting_item('site_enable_multi_lang'))
     <li class="dropdown language-dropdown">
+        {{dd('hiii')}}
         @foreach($languages as $language)
             @if($locale == $language->locale)
                 <a href="#" data-toggle="dropdown" class="is_login">

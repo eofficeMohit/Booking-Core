@@ -5,7 +5,9 @@
 {{--Multi Language--}}
 @if(!empty($actives) and count($actives) > 1)
     <li class="dropdown">
+        {{dd('hiii')}}
         @foreach($actives as $currency)
+       
             @if($current == $currency['currency_main'])
                 <a href="#" data-toggle="dropdown" class="is_login">
                     {{strtoupper($currency['currency_main'])}}
@@ -27,3 +29,4 @@
     </li>
 @endif
 {{--End Multi language--}}
+

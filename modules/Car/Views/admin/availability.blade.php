@@ -246,8 +246,8 @@
 
                         if(form.start_date){
                             var drp = $('.has-daterangepicker').data('daterangepicker');
-                            drp.setStartDate(moment(form.start_date).format(bookingCore.date_format));
-                            drp.setEndDate(moment(form.end_date).format(bookingCore.date_format));
+                            drp.setStartDate(moment(form.start_date).format(planner.date_format));
+                            drp.setEndDate(moment(form.end_date).format(planner.date_format));
 
                         }
                     }
@@ -303,7 +303,7 @@
             created:function () {
                 var me = this;
                 this.$nextTick(function () {
-                    $('.has-daterangepicker').daterangepicker({ "locale": {"format": bookingCore.date_format}})
+                    $('.has-daterangepicker').daterangepicker({ "locale": {"format": planner.date_format}})
                      .on('apply.daterangepicker',function (e,picker) {
                          console.log(picker);
                          me.form.start_date = picker.startDate.format('YYYY-MM-DD');

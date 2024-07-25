@@ -22,7 +22,7 @@
                 this.onSubmit = true;
 
                 $.ajax({
-                    url: bookingCore.routes.checkout,
+                    url: planner.routes.checkout,
                     data: $('.booking-form').find('input,textarea,select').serialize(),
                     method: "post",
                     success: function (res) {

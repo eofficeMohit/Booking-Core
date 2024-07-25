@@ -1,0 +1,2242 @@
+{
+    "__meta": {
+        "id": "Xa5ca8789d99dc37b74c52cd0cdb1d5f6",
+        "datetime": "2024-07-14 21:30:10",
+        "utime": 1720981810.445886,
+        "method": "GET",
+        "uri": "\/hotel",
+        "ip": "127.0.0.1"
+    },
+    "php": {
+        "version": "8.1.28",
+        "interface": "cli-server"
+    },
+    "messages": {
+        "count": 0,
+        "messages": []
+    },
+    "time": {
+        "start": 1720981810.282214,
+        "end": 1720981810.445891,
+        "duration": 0.16367697715759277,
+        "duration_str": "164ms",
+        "measures": [
+            {
+                "label": "Booting",
+                "start": 1720981810.282214,
+                "relative_start": 0,
+                "end": 1720981810.347488,
+                "relative_end": 1720981810.347488,
+                "duration": 0.06527400016784668,
+                "duration_str": "65.27ms",
+                "memory": 0,
+                "memory_str": "0B",
+                "params": [],
+                "collector": null
+            },
+            {
+                "label": "Application",
+                "start": 1720981810.347558,
+                "relative_start": 0.06534409523010254,
+                "end": 1720981810.445892,
+                "relative_end": 1.1920928955078125e-6,
+                "duration": 0.09833407402038574,
+                "duration_str": "98.33ms",
+                "memory": 0,
+                "memory_str": "0B",
+                "params": [],
+                "collector": null
+            }
+        ]
+    },
+    "memory": {
+        "peak_usage": 5045216,
+        "peak_usage_str": "5MB"
+    },
+    "exceptions": {
+        "count": 0,
+        "exceptions": []
+    },
+    "views": {
+        "nb_templates": 38,
+        "templates": [
+            {
+                "name": "Hotel::frontend.search (themes\/BC\/Hotel\/Views\/frontend\/search.blade.php)",
+                "param_count": 8,
+                "params": [
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/search.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.form-search (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/form-search.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/form-search.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.fields.location (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/fields\/location.blade.php)",
+                "param_count": 16,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "hotel_search_fields",
+                    "__currentLoopData",
+                    "field",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/fields\/location.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.fields.date (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/fields\/date.blade.php)",
+                "param_count": 16,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "hotel_search_fields",
+                    "__currentLoopData",
+                    "field",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/fields\/date.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.fields.guests (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/fields\/guests.blade.php)",
+                "param_count": 16,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "hotel_search_fields",
+                    "__currentLoopData",
+                    "field",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/fields\/guests.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.list-item (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/list-item.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/list-item.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.filter-search (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/filter-search.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/filter-search.blade.php&line=0"
+            },
+            {
+                "name": "Layout::global.search.filters.attrs (themes\/BC\/Layout\/global\/search\/filters\/attrs.blade.php)",
+                "param_count": 21,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "price_min",
+                    "pri_from",
+                    "price_max",
+                    "pri_to",
+                    "price_range",
+                    "currency",
+                    "number",
+                    "star",
+                    "review_score"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Layout\/global\/search\/filters\/attrs.blade.php&line=0"
+            },
+            {
+                "name": "Layout::global.search.orderby (themes\/BC\/Layout\/global\/search\/orderby.blade.php)",
+                "param_count": 13,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "routeName"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Layout\/global\/search\/orderby.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.ajax.search-result (themes\/BC\/Hotel\/Views\/frontend\/ajax\/search-result.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/ajax\/search-result.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "Hotel::frontend.layouts.search.loop-grid (themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php)",
+                "param_count": 15,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "__currentLoopData",
+                    "row",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Hotel\/Views\/frontend\/layouts\/search\/loop-grid.blade.php&line=0"
+            },
+            {
+                "name": "pagination::tailwind (resources\/views\/vendor\/pagination\/tailwind.blade.php)",
+                "param_count": 2,
+                "params": [
+                    "paginator",
+                    "elements"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/resources\/views\/vendor\/pagination\/tailwind.blade.php&line=0"
+            },
+            {
+                "name": "vendor.pagination.default (resources\/views\/vendor\/pagination\/default.blade.php)",
+                "param_count": 5,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "paginator",
+                    "elements"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/resources\/views\/vendor\/pagination\/default.blade.php&line=0"
+            },
+            {
+                "name": "layouts.app (resources\/views\/layouts\/app.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/resources\/views\/layouts\/app.blade.php&line=0"
+            },
+            {
+                "name": "Layout::app (modules\/Layout\/app.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/app.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.favicon (modules\/Layout\/parts\/favicon.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/favicon.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.seo-meta (modules\/Layout\/parts\/seo-meta.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/seo-meta.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.global-script (modules\/Layout\/parts\/global-script.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/global-script.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.topbar (modules\/Layout\/parts\/topbar.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/topbar.blade.php&line=0"
+            },
+            {
+                "name": "Core::frontend.currency-switcher (themes\/BC\/Core\/Views\/frontend\/currency-switcher.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Core\/Views\/frontend\/currency-switcher.blade.php&line=0"
+            },
+            {
+                "name": "Language::frontend.switcher (themes\/BC\/Language\/Views\/frontend\/switcher.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Language\/Views\/frontend\/switcher.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.header (modules\/Layout\/parts\/header.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/header.blade.php&line=0"
+            },
+            {
+                "name": "Core::frontend.currency-switcher (themes\/BC\/Core\/Views\/frontend\/currency-switcher.blade.php)",
+                "param_count": 14,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "logo_id",
+                    "logo"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Core\/Views\/frontend\/currency-switcher.blade.php&line=0"
+            },
+            {
+                "name": "Language::frontend.switcher (themes\/BC\/Language\/Views\/frontend\/switcher.blade.php)",
+                "param_count": 14,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "logo_id",
+                    "logo"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/BC\/Language\/Views\/frontend\/switcher.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.footer (modules\/Layout\/parts\/footer.blade.php)",
+                "param_count": 12,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/footer.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.login-register-modal (modules\/Layout\/parts\/login-register-modal.blade.php)",
+                "param_count": 17,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "list_widget_footers",
+                    "__currentLoopData",
+                    "item",
+                    "key",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/login-register-modal.blade.php&line=0"
+            },
+            {
+                "name": "Layout::auth.login-form (modules\/Layout\/auth\/login-form.blade.php)",
+                "param_count": 17,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "list_widget_footers",
+                    "__currentLoopData",
+                    "item",
+                    "key",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/auth\/login-form.blade.php&line=0"
+            },
+            {
+                "name": "Layout::auth.register-form (modules\/Layout\/auth\/register-form.blade.php)",
+                "param_count": 17,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "list_widget_footers",
+                    "__currentLoopData",
+                    "item",
+                    "key",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/auth\/register-form.blade.php&line=0"
+            },
+            {
+                "name": "Popup::frontend.popup (themes\/Base\/Popup\/Views\/frontend\/popup.blade.php)",
+                "param_count": 17,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "list_widget_footers",
+                    "__currentLoopData",
+                    "item",
+                    "key",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/themes\/Base\/Popup\/Views\/frontend\/popup.blade.php&line=0"
+            },
+            {
+                "name": "Layout::parts.cookie-consent-init (modules\/Layout\/parts\/cookie-consent-init.blade.php)",
+                "param_count": 17,
+                "params": [
+                    "__env",
+                    "app",
+                    "errors",
+                    "rows",
+                    "list_location",
+                    "hotel_min_max_price",
+                    "markers",
+                    "blank",
+                    "seo_meta",
+                    "attributes",
+                    "layout",
+                    "bg",
+                    "list_widget_footers",
+                    "__currentLoopData",
+                    "item",
+                    "key",
+                    "loop"
+                ],
+                "type": "blade",
+                "editorLink": "phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Layout\/parts\/cookie-consent-init.blade.php&line=0"
+            }
+        ]
+    },
+    "route": {
+        "uri": "GET hotel",
+        "middleware": "web",
+        "controller": "Modules\\Hotel\\Controllers\\HotelController@index",
+        "namespace": "Modules\\Hotel\\Controllers",
+        "prefix": "\/hotel",
+        "where": [],
+        "as": "hotel.search",
+        "file": "<a href=\"phpstorm:\/\/open?file=\/Applications\/MAMP\/htdocs\/planner\/modules\/Hotel\/Controllers\/HotelController.php&line=37\">modules\/Hotel\/Controllers\/HotelController.php:37-108<\/a>"
+    },
+    "queries": {
+        "nb_statements": 27,
+        "nb_failed_statements": 0,
+        "accumulated_duration": 0.027779999999999996,
+        "accumulated_duration_str": "27.78ms",
+        "statements": [
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_layout_search' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_layout_search"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.00207,
+                "duration_str": "2.07ms",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_limit_item' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_limit_item"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.00038,
+                "duration_str": "380\u03bcs",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select count(*) as aggregate from (select `bravo_hotels`.* from `bravo_hotels` where `bravo_hotels`.`status` = 'publish' and `bravo_hotels`.`deleted_at` is null group by `bravo_hotels`.`id`) as `aggregate_table`",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "publish"
+                ],
+                "hints": [],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 18,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.0008900000000000001,
+                "duration_str": "890\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select `bravo_hotels`.* from `bravo_hotels` where `bravo_hotels`.`status` = 'publish' and `bravo_hotels`.`deleted_at` is null group by `bravo_hotels`.`id` order by `is_featured` desc, `id` desc limit 9 offset 0",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "publish"
+                ],
+                "hints": [],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 18,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00069,
+                "duration_str": "690\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_locations` where `bravo_locations`.`id` in (1, 2, 3, 5) and `bravo_locations`.`deleted_at` is null",
+                "type": "query",
+                "params": [],
+                "bindings": [],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00035,
+                "duration_str": "350\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_location_translations` where `locale` = 'en' and `bravo_location_translations`.`origin_id` in (1, 2, 3, 5)",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 25,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 26,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 27,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 28,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 29,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00023,
+                "duration_str": "230\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `user_wishlist` where `object_model` = 'hotel' and `user_id` = 0 and `user_wishlist`.`object_id` in (3, 4, 5, 6, 7, 8, 9, 10, 11)",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel",
+                    "0"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00025,
+                "duration_str": "250\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_hotel_translations` where `locale` = 'en' and `bravo_hotel_translations`.`origin_id` in (3, 4, 5, 6, 7, 8, 9, 10, 11) and `bravo_hotel_translations`.`deleted_at` is null",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00032,
+                "duration_str": "320\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select `bravo_terms`.*, `bravo_hotel_term`.`target_id` as `laravel_through_key` from `bravo_terms` inner join `bravo_hotel_term` on `bravo_hotel_term`.`term_id` = `bravo_terms`.`id` where `bravo_terms`.`attr_id` = '6' and `bravo_hotel_term`.`target_id` in (3, 4, 5, 6, 7, 8, 9, 10, 11) and `bravo_terms`.`deleted_at` is null",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "6"
+                ],
+                "hints": [],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00114,
+                "duration_str": "1.14ms",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_terms_translations` where `locale` = 'en' and `bravo_terms_translations`.`origin_id` in (42, 43, 44, 45, 46, 47, 48)",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 25,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 26,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 27,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 28,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00023999999999999998,
+                "duration_str": "240\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:54",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_locations` where `status` = 'publish' and `bravo_locations`.`deleted_at` is null limit 1000",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "publish"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 14,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 91
+                    },
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 18,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00035999999999999997,
+                "duration_str": "360\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:91",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_location_translations` where `locale` = 'en' and `bravo_location_translations`.`origin_id` in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 91
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00028000000000000003,
+                "duration_str": "280\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:91",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select MIN( price ) AS min_price ,\nMAX( price ) AS max_price  from `bravo_hotels` where `status` = 'publish' and `bravo_hotels`.`deleted_at` is null limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "publish"
+                ],
+                "hints": [
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Models\/Hotel.php",
+                        "line": 606
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 92
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 18,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    }
+                ],
+                "duration": 0.00043,
+                "duration_str": "430\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Models\/Hotel.php:606",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'search_open_tab' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "search_open_tab"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.0007,
+                "duration_str": "700\u03bcs",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_list_seo_title' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_list_seo_title"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.0012,
+                "duration_str": "1.2ms",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_search_title' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_search_title"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.00063,
+                "duration_str": "630\u03bcs",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_list_seo_image' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_list_seo_image"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.00073,
+                "duration_str": "730\u03bcs",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_search_banner' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_search_banner"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.0005,
+                "duration_str": "500\u03bcs",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_list_seo_desc' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_list_seo_desc"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.00116,
+                "duration_str": "1.16ms",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_settings` where `name` = 'hotel_page_list_seo_share' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel_page_list_seo_share"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 33
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Core\/Models\/Settings.php",
+                        "line": 35
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 18
+                    }
+                ],
+                "duration": 0.00108,
+                "duration_str": "1.08ms",
+                "stmt_id": "\/modules\/Core\/Models\/Settings.php:33",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_attrs` where `service` = 'hotel' and `bravo_attrs`.`deleted_at` is null order by `position` desc",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "hotel"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 14,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 99
+                    },
+                    {
+                        "index": 15,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 16,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 17,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 18,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.0007199999999999999,
+                "duration_str": "720\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:99",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select `bravo_terms`.*, (select count(*) from `bravo_hotels` inner join `bravo_hotel_term` on `bravo_hotels`.`id` = `bravo_hotel_term`.`target_id` where `bravo_terms`.`id` = `bravo_hotel_term`.`term_id` and `bravo_hotels`.`deleted_at` is null) as `hotel_count` from `bravo_terms` where `bravo_terms`.`attr_id` in (5, 6, 7) and `bravo_terms`.`deleted_at` is null",
+                "type": "query",
+                "params": [],
+                "bindings": [],
+                "hints": [],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 99
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.01085,
+                "duration_str": "10.85ms",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:99",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_terms_translations` where `locale` = 'en' and `bravo_terms_translations`.`origin_id` in (32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55)",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 99
+                    },
+                    {
+                        "index": 25,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 26,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 27,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 28,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.0007199999999999999,
+                "duration_str": "720\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:99",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `bravo_attrs_translations` where `locale` = 'en' and `bravo_attrs_translations`.`origin_id` in (5, 6, 7)",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 99
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+                        "line": 54
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/modules\/Hotel\/Controllers\/HotelController.php",
+                        "line": 34
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+                        "line": 43
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+                        "line": 260
+                    }
+                ],
+                "duration": 0.00055,
+                "duration_str": "550\u03bcs",
+                "stmt_id": "\/modules\/Hotel\/Controllers\/HotelController.php:99",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `media_files` where `media_files`.`id` = '92' and `media_files`.`deleted_at` is null limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "92"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 18,
+                        "namespace": null,
+                        "name": "\/app\/BaseModel.php",
+                        "line": 135
+                    },
+                    {
+                        "index": 19,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Repository.php",
+                        "line": 438
+                    },
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/CacheManager.php",
+                        "line": 408
+                    },
+                    {
+                        "index": 22,
+                        "namespace": null,
+                        "name": "\/app\/BaseModel.php",
+                        "line": 136
+                    },
+                    {
+                        "index": 23,
+                        "namespace": null,
+                        "name": "\/modules\/Media\/Helpers\/FileHelper.php",
+                        "line": 42
+                    }
+                ],
+                "duration": 0.0006,
+                "duration_str": "600\u03bcs",
+                "stmt_id": "\/app\/BaseModel.php:135",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_menu_translations` where `core_menu_translations`.`origin_id` = 1 and `core_menu_translations`.`origin_id` is not null and `locale` = 'en' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "1",
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Traits\/HasTranslations.php",
+                        "line": 51
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 111
+                    },
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php",
+                        "line": 110
+                    },
+                    {
+                        "index": 25,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php",
+                        "line": 58
+                    },
+                    {
+                        "index": 26,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php",
+                        "line": 70
+                    }
+                ],
+                "duration": 0.00045,
+                "duration_str": "450\u03bcs",
+                "stmt_id": "\/app\/Traits\/HasTranslations.php:51",
+                "connection": "booking_core"
+            },
+            {
+                "sql": "select * from `core_menu_translations` where `core_menu_translations`.`origin_id` = 1 and `core_menu_translations`.`origin_id` is not null and `locale` = 'en' limit 1",
+                "type": "query",
+                "params": [],
+                "bindings": [
+                    "1",
+                    "en"
+                ],
+                "hints": [
+                    "Use <code>SELECT *<\/code> only if you need all columns from table",
+                    "<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"
+                ],
+                "show_copy": false,
+                "backtrace": [
+                    {
+                        "index": 20,
+                        "namespace": null,
+                        "name": "\/app\/Traits\/HasTranslations.php",
+                        "line": 51
+                    },
+                    {
+                        "index": 21,
+                        "namespace": null,
+                        "name": "\/app\/Helpers\/AppHelper.php",
+                        "line": 111
+                    },
+                    {
+                        "index": 24,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php",
+                        "line": 110
+                    },
+                    {
+                        "index": 25,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php",
+                        "line": 58
+                    },
+                    {
+                        "index": 26,
+                        "namespace": null,
+                        "name": "\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php",
+                        "line": 70
+                    }
+                ],
+                "duration": 0.00026000000000000003,
+                "duration_str": "260\u03bcs",
+                "stmt_id": "\/app\/Traits\/HasTranslations.php:51",
+                "connection": "booking_core"
+            }
+        ]
+    },
+    "models": {
+        "data": {
+            "Modules\\Media\\Models\\MediaFile": 1,
+            "Modules\\Core\\Models\\Attributes": 3,
+            "Modules\\Core\\Models\\Terms": 78,
+            "Modules\\Location\\Models\\Location": 14,
+            "Modules\\Hotel\\Models\\Hotel": 10,
+            "Modules\\Core\\Models\\Settings": 5
+        },
+        "count": 111
+    },
+    "auth": {
+        "guards": {
+            "web": "null",
+            "sanctum": "null"
+        },
+        "names": ""
+    },
+    "gate": {
+        "count": 0,
+        "messages": []
+    },
+    "session": {
+        "_token": "CiFAc6R8xB5RmGKUG10Uw65FNDDAEXPYCqYkadPI",
+        "_previous": "array:1 [\n  \"url\" => \"http:\/\/127.0.0.1:8000\/hotel\"\n]",
+        "_flash": "array:2 [\n  \"old\" => []\n  \"new\" => []\n]",
+        "PHPDEBUGBAR_STACK_DATA": "[]"
+    },
+    "request": {
+        "path_info": "\/hotel",
+        "status_code": "<pre class=sf-dump id=sf-dump-744389145 data-indent-pad=\"  \"><span class=sf-dump-num>200<\/span>\n<\/pre><script>Sfdump(\"sf-dump-744389145\", {\"maxDepth\":0})<\/script>\n",
+        "status_text": "OK",
+        "format": "html",
+        "content_type": "text\/html; charset=UTF-8",
+        "request_query": "<pre class=sf-dump id=sf-dump-556383483 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-556383483\", {\"maxDepth\":0})<\/script>\n",
+        "request_request": "<pre class=sf-dump id=sf-dump-1045397638 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-1045397638\", {\"maxDepth\":0})<\/script>\n",
+        "request_headers": "<pre class=sf-dump id=sf-dump-220964415 data-indent-pad=\"  \"><span class=sf-dump-note>array:17<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>host<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"14 characters\">127.0.0.1:8000<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>connection<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"64 characters\">&quot;Not\/A)Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;126&quot;, &quot;Google Chrome&quot;;v=&quot;126&quot;<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua-mobile<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?0<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua-platform<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"7 characters\">&quot;macOS&quot;<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>upgrade-insecure-requests<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>dnt<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>user-agent<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"117 characters\">Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Safari\/537.36<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"135 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-site<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-mode<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-user<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-dest<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>referer<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"39 characters\">http:\/\/127.0.0.1:8000\/page\/home-page-v2<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-encoding<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"23 characters\">gzip, deflate, br, zstd<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-language<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"26 characters\">en-GB,en-US;q=0.9,en;q=0.8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cookie<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"1011 characters\">booking_cookie_agreement_enable=eyJpdiI6ImUwUUd3L3V2VUtiUXhGWlhLSUpnTmc9PSIsInZhbHVlIjoiSURwNTFHd3FIZEJCZjcwY2J5K0xVYkpYTzF0bHExL1Q3WitGSGhPbVRqUXFrbzNJZGNCeGZUQldzcDMyOHN3dCIsIm1hYyI6IjM3NjY0NGYyNTQyNmZhOWE0YTExNGQ4MzkwMTAxY2E5ZjhjOWEyOTI0YTdiMzBiN2ZiMTM3MmJjMTI0MzZkZDciLCJ0YWciOiIifQ%3D%3D; XSRF-TOKEN=eyJpdiI6IktuQ3ZEakM5NTQ5TXg5TENQT1hUM1E9PSIsInZhbHVlIjoidVc1bFdkV0VraFNJUnZZU2NXQVpqQVpYVzJTVHpKTGRRYWowRFJJM1hVV2ZNRmNFMC9zK3J6UHRVaUpOenYxcXpmaE1lM0szT2thTWNQbzd3Y0VlUFl2MWU5Z3RibXdJS0lJK2haY21ScjhlMjJ0a1c1Ync2VjFEVFNNUWhyd2kiLCJtYWMiOiI1OTNkMWFmM2Y1MTIzNzUxODMzMmZjMTdhYjZjNmE4YTVjOGNjODM4YWJiOWY1NDM0YjQ3MjFlYmZlOTYzMjhjIiwidGFnIjoiIn0%3D; planner_session=eyJpdiI6Ingya3FNRnN1dnpjSFk3aWVKclJTNEE9PSIsInZhbHVlIjoibmtDcGhpRHNQbkpBbk1GWjNvQUo2RVM0bG9udk5QamlQZEpRcHdIRzlITDVlRWRaeUVMOTZOd2Fuc1plSGNsMTRFYzZqeGtJYnBJUTJ5NXZJK2NGTmR5dFhQeE1sVlN3aXlIOVFQbithNDBtQWRjN0NNRjNwTnY3OHh3RElNV3IiLCJtYWMiOiJmMTdmMjBkZWVjYzU2Zjg2YjIxZDgwODIyYzNiZGVmMzZlNzQ2NzU4YzQ5YTJlZjFiMDY4NmI4Yzg0MDc4ZjM3IiwidGFnIjoiIn0%3D<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-220964415\", {\"maxDepth\":0})<\/script>\n",
+        "request_server": "<pre class=sf-dump id=sf-dump-1129844899 data-indent-pad=\"  \"><span class=sf-dump-note>array:32<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"44 characters\">\/Applications\/MAMP\/htdocs\/planner\/public<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">127.0.0.1<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_PORT<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">59817<\/span>\"\n  \"<span class=sf-dump-key>SERVER_SOFTWARE<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">PHP 8.1.28 Development Server<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PROTOCOL<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">HTTP\/1.1<\/span>\"\n  \"<span class=sf-dump-key>SERVER_NAME<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">127.0.0.1<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PORT<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">8000<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_URI<\/span>\" => \"<span class=sf-dump-str title=\"6 characters\">\/hotel<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_METHOD<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_NAME<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">\/index.php<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_FILENAME<\/span>\" => \"<span class=sf-dump-str title=\"54 characters\">\/Applications\/MAMP\/htdocs\/planner\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>PATH_INFO<\/span>\" => \"<span class=sf-dump-str title=\"6 characters\">\/hotel<\/span>\"\n  \"<span class=sf-dump-key>PHP_SELF<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">\/index.php\/hotel<\/span>\"\n  \"<span class=sf-dump-key>HTTP_HOST<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">127.0.0.1:8000<\/span>\"\n  \"<span class=sf-dump-key>HTTP_CONNECTION<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA<\/span>\" => \"<span class=sf-dump-str title=\"64 characters\">&quot;Not\/A)Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;126&quot;, &quot;Google Chrome&quot;;v=&quot;126&quot;<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA_MOBILE<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?0<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA_PLATFORM<\/span>\" => \"<span class=sf-dump-str title=\"7 characters\">&quot;macOS&quot;<\/span>\"\n  \"<span class=sf-dump-key>HTTP_UPGRADE_INSECURE_REQUESTS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_DNT<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_USER_AGENT<\/span>\" => \"<span class=sf-dump-str title=\"117 characters\">Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Safari\/537.36<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT<\/span>\" => \"<span class=sf-dump-str title=\"135 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_SITE<\/span>\" => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_MODE<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_USER<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_DEST<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  \"<span class=sf-dump-key>HTTP_REFERER<\/span>\" => \"<span class=sf-dump-str title=\"39 characters\">http:\/\/127.0.0.1:8000\/page\/home-page-v2<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_ENCODING<\/span>\" => \"<span class=sf-dump-str title=\"23 characters\">gzip, deflate, br, zstd<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_LANGUAGE<\/span>\" => \"<span class=sf-dump-str title=\"26 characters\">en-GB,en-US;q=0.9,en;q=0.8<\/span>\"\n  \"<span class=sf-dump-key>HTTP_COOKIE<\/span>\" => \"<span class=sf-dump-str title=\"1011 characters\">booking_cookie_agreement_enable=eyJpdiI6ImUwUUd3L3V2VUtiUXhGWlhLSUpnTmc9PSIsInZhbHVlIjoiSURwNTFHd3FIZEJCZjcwY2J5K0xVYkpYTzF0bHExL1Q3WitGSGhPbVRqUXFrbzNJZGNCeGZUQldzcDMyOHN3dCIsIm1hYyI6IjM3NjY0NGYyNTQyNmZhOWE0YTExNGQ4MzkwMTAxY2E5ZjhjOWEyOTI0YTdiMzBiN2ZiMTM3MmJjMTI0MzZkZDciLCJ0YWciOiIifQ%3D%3D; XSRF-TOKEN=eyJpdiI6IktuQ3ZEakM5NTQ5TXg5TENQT1hUM1E9PSIsInZhbHVlIjoidVc1bFdkV0VraFNJUnZZU2NXQVpqQVpYVzJTVHpKTGRRYWowRFJJM1hVV2ZNRmNFMC9zK3J6UHRVaUpOenYxcXpmaE1lM0szT2thTWNQbzd3Y0VlUFl2MWU5Z3RibXdJS0lJK2haY21ScjhlMjJ0a1c1Ync2VjFEVFNNUWhyd2kiLCJtYWMiOiI1OTNkMWFmM2Y1MTIzNzUxODMzMmZjMTdhYjZjNmE4YTVjOGNjODM4YWJiOWY1NDM0YjQ3MjFlYmZlOTYzMjhjIiwidGFnIjoiIn0%3D; planner_session=eyJpdiI6Ingya3FNRnN1dnpjSFk3aWVKclJTNEE9PSIsInZhbHVlIjoibmtDcGhpRHNQbkpBbk1GWjNvQUo2RVM0bG9udk5QamlQZEpRcHdIRzlITDVlRWRaeUVMOTZOd2Fuc1plSGNsMTRFYzZqeGtJYnBJUTJ5NXZJK2NGTmR5dFhQeE1sVlN3aXlIOVFQbithNDBtQWRjN0NNRjNwTnY3OHh3RElNV3IiLCJtYWMiOiJmMTdmMjBkZWVjYzU2Zjg2YjIxZDgwODIyYzNiZGVmMzZlNzQ2NzU4YzQ5YTJlZjFiMDY4NmI4Yzg0MDc4ZjM3IiwidGFnIjoiIn0%3D<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_TIME_FLOAT<\/span>\" => <span class=sf-dump-num>1720981810.2822<\/span>\n  \"<span class=sf-dump-key>REQUEST_TIME<\/span>\" => <span class=sf-dump-num>1720981810<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1129844899\", {\"maxDepth\":0})<\/script>\n",
+        "request_cookies": "<pre class=sf-dump id=sf-dump-1147563391 data-indent-pad=\"  \"><span class=sf-dump-note>array:3<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>booking_cookie_agreement_enable<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>XSRF-TOKEN<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">CiFAc6R8xB5RmGKUG10Uw65FNDDAEXPYCqYkadPI<\/span>\"\n  \"<span class=sf-dump-key>planner_session<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">U57he85xTUDXZqz7M7dMAEGkVB1hRerReTbRb8wK<\/span>\"\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1147563391\", {\"maxDepth\":0})<\/script>\n",
+        "response_headers": "<pre class=sf-dump id=sf-dump-45870636 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>content-type<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"24 characters\">text\/html; charset=UTF-8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cache-control<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">no-cache, private<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>date<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"29 characters\">Sun, 14 Jul 2024 18:30:10 GMT<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>set-cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"428 characters\">XSRF-TOKEN=eyJpdiI6InRuaWJqUzh5RjBKcHk3RTVUd3d5dVE9PSIsInZhbHVlIjoiYkZUcm00enJtZ2VtTllkdTZ4SlFvQnRjdDRpYVJ2d2tGbFhpZy9qay82QUtzQUJkcnFha0JVeitJaVdnVk11SklQUU5jVTd6dE1TcCtDcnM4Z3BuY2pSUG1GS1o0Sy9xSjFBbGZLZm5MdzVUajhJNHNMVkJYd1Arem9GS3AxSU4iLCJtYWMiOiIwNjQ3MTY2NzhhYjZlMTM5NzhmMjViM2IwYTNjMDk4OTg2MTRjZjIyMjM1ZTdkMmRiZjgyMjY0MGEzNDNlNTM4IiwidGFnIjoiIn0%3D; expires=Sun, 14 Jul 2024 20:30:10 GMT; Max-Age=7200; path=\/; samesite=lax<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"447 characters\">planner_session=eyJpdiI6IkprVzZHYlVRVG1UaHYwSy9SeUZSamc9PSIsInZhbHVlIjoieks0QlQ4L1l6em1kbUdrMkdDOEJSQkZOajR6cjcrNEh2ZitVclp0ZVJBK1drZVIvaUtLeWNrWk9haVR1T3Rnd2N2dUczK1gycy9IWENIREdzZ3lQaDBtUVp4Z3RRcXEwUXFTSVljU2krRnBMYU44R1RuNUVGUGU4bWZIdStmcnYiLCJtYWMiOiI5YzcxNmRkYjEyMDA1OGQzYWZlMzdhZTVmN2YxYjI5ZTllNzhiOGM2ZDU3YmY4MDlhMjRiYzRkZTViYjE3N2YwIiwidGFnIjoiIn0%3D; expires=Sun, 14 Jul 2024 20:30:10 GMT; Max-Age=7200; path=\/; httponly; samesite=lax<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>Set-Cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"400 characters\">XSRF-TOKEN=eyJpdiI6InRuaWJqUzh5RjBKcHk3RTVUd3d5dVE9PSIsInZhbHVlIjoiYkZUcm00enJtZ2VtTllkdTZ4SlFvQnRjdDRpYVJ2d2tGbFhpZy9qay82QUtzQUJkcnFha0JVeitJaVdnVk11SklQUU5jVTd6dE1TcCtDcnM4Z3BuY2pSUG1GS1o0Sy9xSjFBbGZLZm5MdzVUajhJNHNMVkJYd1Arem9GS3AxSU4iLCJtYWMiOiIwNjQ3MTY2NzhhYjZlMTM5NzhmMjViM2IwYTNjMDk4OTg2MTRjZjIyMjM1ZTdkMmRiZjgyMjY0MGEzNDNlNTM4IiwidGFnIjoiIn0%3D; expires=Sun, 14-Jul-2024 20:30:10 GMT; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"419 characters\">planner_session=eyJpdiI6IkprVzZHYlVRVG1UaHYwSy9SeUZSamc9PSIsInZhbHVlIjoieks0QlQ4L1l6em1kbUdrMkdDOEJSQkZOajR6cjcrNEh2ZitVclp0ZVJBK1drZVIvaUtLeWNrWk9haVR1T3Rnd2N2dUczK1gycy9IWENIREdzZ3lQaDBtUVp4Z3RRcXEwUXFTSVljU2krRnBMYU44R1RuNUVGUGU4bWZIdStmcnYiLCJtYWMiOiI5YzcxNmRkYjEyMDA1OGQzYWZlMzdhZTVmN2YxYjI5ZTllNzhiOGM2ZDU3YmY4MDlhMjRiYzRkZTViYjE3N2YwIiwidGFnIjoiIn0%3D; expires=Sun, 14-Jul-2024 20:30:10 GMT; path=\/; httponly<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-45870636\", {\"maxDepth\":0})<\/script>\n",
+        "session_attributes": "<pre class=sf-dump id=sf-dump-1119353252 data-indent-pad=\"  \"><span class=sf-dump-note>array:4<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_token<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">CiFAc6R8xB5RmGKUG10Uw65FNDDAEXPYCqYkadPI<\/span>\"\n  \"<span class=sf-dump-key>_previous<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>url<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">http:\/\/127.0.0.1:8000\/hotel<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>_flash<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>old<\/span>\" => []\n    \"<span class=sf-dump-key>new<\/span>\" => []\n  <\/samp>]\n  \"<span class=sf-dump-key>PHPDEBUGBAR_STACK_DATA<\/span>\" => []\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1119353252\", {\"maxDepth\":0})<\/script>\n"
+    }
+}

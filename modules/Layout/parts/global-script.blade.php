@@ -1,5 +1,5 @@
 <script>
-    var bookingCore = {
+    var planner = {
         url:'{{url( app_get_locale() )}}',
         url_root:'{{ url('') }}',
         admin_url:'{{ route('admin.index') }}',
@@ -35,13 +35,13 @@
         module:{}
     };
     @if(auth()->user())
-        bookingCore.media = {
+        planner.media = {
         groups:{!! json_encode(config('bc.media.groups')) !!},
     }
     @endif
     @foreach(get_bookable_services() as $id=>$class)
         @if($class::isEnable())
-            bookingCore.module.{{$id}} = '{{route($id.'.search')}}';
+            planner.module.{{$id}} = '{{route($id.'.search')}}';
         @endif
     @endforeach
     var i18n = {

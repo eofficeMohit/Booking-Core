@@ -25,7 +25,7 @@
                                         </span>
                                             <span class="setting-item-info">
                                             <span class="setting-item-title">{{__("Modules")}}</span>
-                                            <span class="setting-item-desc">{{__("Modules for Booking Core")}}</span>
+                                            <span class="setting-item-desc">{{__("Modules for Planner")}}</span>
                                         </span>
                                         </a>
                                     </div>
@@ -89,7 +89,7 @@
                                         </span>
                                             <span class="setting-item-info">
                                             <span class="setting-item-title">{{__("Updater")}}</span>
-                                            <span class="setting-item-desc">{{__("Updater Booking Core")}}</span>
+                                            <span class="setting-item-desc">{{__("Updater Planner")}}</span>
                                         </span>
                                         </a>
                                     </div>
@@ -103,7 +103,7 @@
                                         </span>
                                             <span class="setting-item-info">
                                             <span class="setting-item-title">{{__("Clear Cache")}}</span>
-                                            <span class="setting-item-desc">{{__("Clear Cache for Booking Core")}}</span>
+                                            <span class="setting-item-desc">{{__("Clear Cache for Planner")}}</span>
                                         </span>
                                         </a>
                                     </div>

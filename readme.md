@@ -1,5 +1,5 @@
-## About Booking Core Version 3.0.0
-Booking Core is a Booking System based on Laravel, designed for a travel website, Marketplace, Travel Agency, Tour Operator, Room Bnb, Villa Rental, Resort Rental, Make Travel website. With 6+ years working on travel products we confident to bring to you best product for your travel site with optimized UX/UI, friendly on mobile on the search engine.
+## About Planner Version 3.0.0
+Planner is a Planner based on Laravel, designed for a travel website, Marketplace, Travel Agency, Tour Operator, Room Bnb, Villa Rental, Resort Rental, Make Travel website. With 6+ years working on travel products we confident to bring to you best product for your travel site with optimized UX/UI, friendly on mobile on the search engine.
 
 ## Main Features:
 
@@ -28,8 +28,8 @@ Booking Core is a Booking System based on Laravel, designed for a travel website
 
 7. Peach Gateway
 
-### Get Support: [Click here](https://bookingcore.co)
+### Get Support: [Click here](https://planner.co)
 
 ### Join our Discord: [https://discord.gg/FBP3TuFXCe](https://discord.gg/FBP3TuFX)
 
-### Author: [BookingCore Team](https://codecanyon.net/user/bookingcore)
+### Author: [planner Team](https://codecanyon.net/user/planner)

@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
     {
         $active_theme = ThemeManager::current();
         $active_theme = strtolower($active_theme);
-        $active_theme = ($active_theme == "bc") ? "bookingcore" : $active_theme;
+        $active_theme = ($active_theme == "bc") ? "planner" : $active_theme;
 
         DB::table('users')->insert([
             'first_name'        => 'Vendor',

@@ -14,7 +14,7 @@ class ThemeProvider extends AbstractThemeProvider
 
     public static $version = '2.5.1';
     public static $asset_version;
-    public static $name = 'Booking Core';
+    public static $name = 'Planner';
     public static $parent;
 
     public static function info()

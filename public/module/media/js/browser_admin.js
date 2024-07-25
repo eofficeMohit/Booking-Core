@@ -2,31 +2,31 @@
     import Vue from 'vue'
     window.uploaderModal = new Vue({
         el: '#cdn-browser',
-        data:{
-            files:[],
-            viewType:'grid',
-            total:0,
-            totalPage:0,
-            fileTypes:[],
-            selected:[],
-            selectedLists:[],
-            showUploader:false,
-            apiFinished:false,
-            modalEl:false,
-            multiple:false,
-            isLoading:false,
-            filter:{
-                page:1
+        data: {
+            files: [],
+            viewType: 'grid',
+            total: 0,
+            totalPage: 0,
+            fileTypes: [],
+            selected: [],
+            selectedLists: [],
+            showUploader: false,
+            apiFinished: false,
+            modalEl: false,
+            multiple: false,
+            isLoading: false,
+            filter: {
+                page: 1
             },
-            onSelect:function () {},
-            uploadConfigs:{}
+            onSelect: function () { },
+            uploadConfigs: {}
         },
-        mounted(){
+        mounted() {
             let me = this;
 
             this.modalEl = $('#cdn-browser-modal').modal({
-                show:false
-            }).on('show.bs.modal',function () {
+                show: false
+            }).on('show.bs.modal', function () {
                 me.reloadLists();
             });
 
@@ -37,34 +37,34 @@
             })
 
         },
-        watch:{
-            uploadConfigs(val){
+        watch: {
+            uploadConfigs(val) {
                 this.multiple = val.multiple;
                 this.onSelect = val.onSelect;
             }
         },
-        methods:{
-            show(configs){
+        methods: {
+            show(configs) {
                 this.files = [];
                 this.resetSelected();
                 this.uploadConfigs = configs;
                 this.modalEl.modal('show');
             },
-            hide(){
+            hide() {
                 this.modalEl.modal('hide');
             },
-            changePage(p,e){
+            changePage(p, e) {
                 e.preventDefault();
                 this.filter.page = p;
                 this.reloadLists();
             },
-            selectFile(file){
+            selectFile(file) {
                 var index = this.selected.indexOf(file.id);
                 if (index > -1) {
                     this.selected.splice(index, 1);
-                    this.selectedLists.splice(index,1);
-                }else{
-                    if(!this.multiple){
+                    this.selectedLists.splice(index, 1);
+                } else {
+                    if (!this.multiple) {
                         this.selected = [];
                         this.selectedLists = [];
                     }
@@ -74,31 +74,31 @@
             },
             removeFiles() {
                 var me = this;
-                bookingCoreApp.showConfirm({
+                plannerApp.showConfirm({
                     message: i18n.confirm_delete,
-                    callback: function(result){
-                        if(result){
+                    callback: function (result) {
+                        if (result) {
                             me.isLoading = true;
                             $.ajax({
-                                url:bookingCore.admin_url+'/module/media/removeFiles',
-                                type:'POST',
-                                data:{
-                                    file_ids : me.selected
+                                url: planner.admin_url + '/module/media/removeFiles',
+                                type: 'POST',
+                                data: {
+                                    file_ids: me.selected
                                 },
-                                dataType:'json',
-                                success:function (data) {
-                                    if(data.status === 1){
-                                        //bookingCoreApp.showSuccess(data);
+                                dataType: 'json',
+                                success: function (data) {
+                                    if (data.status === 1) {
+                                        //plannerApp.showSuccess(data);
                                     }
-                                    if(data.status === 0){
-                                        bookingCoreApp.showError(data);
+                                    if (data.status === 0) {
+                                        plannerApp.showError(data);
                                     }
                                     me.isLoading = false;
                                     me.reloadLists();
                                 },
-                                error:function (e) {
+                                error: function (e) {
                                     me.isLoading = false;
-                                    bookingCoreApp.showAjaxError(e);
+                                    plannerApp.showAjaxError(e);
                                     me.resetSelected();
                                 }
                             });
@@ -106,31 +106,31 @@
                     }
                 })
             },
-            sendFiles(){
-                if(typeof this.onSelect == 'function'){
+            sendFiles() {
+                if (typeof this.onSelect == 'function') {
                     let f = this.onSelect;
                     f(this.selectedLists)
                 }
                 this.hide();
             },
-            init(){
+            init() {
                 var me = this;
                 this.reloadLists();
             },
-            reloadLists(){
+            reloadLists() {
                 var me = this;
                 $("#cdn-browser .icon-loading").addClass("active");
                 me.isLoading = true;
                 $.ajax({
-                    url:bookingCore.admin_url+'/module/media/getLists',
-                    type:'POST',
-                    data:{
-                        file_type:this.uploadConfigs.file_type,
-                        page:this.filter.page,
-                        s:this.filter.s
+                    url: planner.admin_url + '/module/media/getLists',
+                    type: 'POST',
+                    data: {
+                        file_type: this.uploadConfigs.file_type,
+                        page: this.filter.page,
+                        s: this.filter.s
                     },
-                    dataType:'json',
-                    success:function (json) {
+                    dataType: 'json',
+                    success: function (json) {
                         me.resetSelected();
                         me.files = json.data;
                         me.total = json.total;
@@ -140,44 +140,43 @@
                     }
                 });
             },
-            upload(files){
+            upload(files) {
                 var me = this;
-                if(!files.length) return ;
-                for(var i = 0; i < files.length ; i++){
+                if (!files.length) return;
+                for (var i = 0; i < files.length; i++) {
                     var d = new FormData();
-                    d.append('file',files[i]);
-                    d.append('type',this.uploadConfigs.file_type);
+                    d.append('file', files[i]);
+                    d.append('type', this.uploadConfigs.file_type);
                     me.isLoading = true;
                     $.ajax({
-                        url:bookingCore.admin_url+'/module/media/store',
-                        data:d,
-                        dataType:'json',
-                        type:'post',
+                        url: planner.admin_url + '/module/media/store',
+                        data: d,
+                        dataType: 'json',
+                        type: 'post',
                         contentType: false,
                         processData: false,
-                        success:function (res) {
+                        success: function (res) {
                             me.isLoading = false;
-                            if(res.status)
-                            {
+                            if (res.status) {
                                 me.reloadLists();
                             }
-                            if(res.status === 0){
-                                bookingCoreApp.showError(res);
+                            if (res.status === 0) {
+                                plannerApp.showError(res);
                             }
                             $(me.$refs.files).val('');
                         },
-                        error:function(e){
-                            bookingCoreApp.showAjaxError(e);
+                        error: function (e) {
+                            plannerApp.showAjaxError(e);
                             me.isLoading = false;
                             $(me.$refs.files).val('');
                         }
                     })
                 }
             },
-            initUploader(){
+            initUploader() {
 
             },
-            resetSelected(){
+            resetSelected() {
                 this.selectedLists = [];
                 this.selected = [];
                 this.total = 0;
@@ -188,52 +187,52 @@
     });
 
     Vue.component('file-item', {
-        template:'#file-item-template',
+        template: '#file-item-template',
         data: function () {
             return {
                 count: 0
             }
         },
-        props:['file',"selected","viewType"],
-        methods:{
-            selectFile(file){
-                this.$emit('select-file',file);
+        props: ['file', "selected", "viewType"],
+        methods: {
+            selectFile(file) {
+                this.$emit('select-file', file);
             },
-            fileClass(file){
+            fileClass(file) {
                 var s = [];
                 s.push(file.file_type);
 
-                if(file.file_type.substr(0,5)=='image'){
+                if (file.file_type.substr(0, 5) == 'image') {
                     s.push('is-image');
-                }else{
+                } else {
                     s.push('not-image');
                 }
                 return s;
             },
-            getFileThumb(file){
-                if(file.file_type.substr(0,5)=='image'){
-                    return '<img src="'+file.thumb_size+'">';
+            getFileThumb(file) {
+                if (file.file_type.substr(0, 5) == 'image') {
+                    return '<img src="' + file.thumb_size + '">';
                 }
-                if(file.file_type.substr(0,5)=='video'){
+                if (file.file_type.substr(0, 5) == 'video') {
                     return '<img src="/assets/browser/icon/007-video-file.png">';
                 }
-                if(file.file_type.indexOf('x-zip-compressed')!== -1 || file.file_type.indexOf('/zip')!== -1){
+                if (file.file_type.indexOf('x-zip-compressed') !== -1 || file.file_type.indexOf('/zip') !== -1) {
                     return '<img src="/assets/browser/icon/005-zip-2.png">';
                 }
-                if(file.file_type.indexOf('/pdf')!== -1 ){
+                if (file.file_type.indexOf('/pdf') !== -1) {
                     return '<img src="/assets/browser/icon/002-pdf-file-format-symbol.png">';
                 }
 
-                if(file.file_type.indexOf('/msword')!== -1 || file.file_type.indexOf('wordprocessingml')!== -1){
+                if (file.file_type.indexOf('/msword') !== -1 || file.file_type.indexOf('wordprocessingml') !== -1) {
                     return '<img src="/assets/browser/icon/010-word.png">';
                 }
-                if(file.file_type.indexOf('spreadsheetml')!== -1  || file.file_type.indexOf('excel')!== -1){
+                if (file.file_type.indexOf('spreadsheetml') !== -1 || file.file_type.indexOf('excel') !== -1) {
                     return '<img src="/assets/browser/icon/011-excel-file.png">';
                 }
-                if(file.file_type.indexOf('presentation')!== -1 ){
+                if (file.file_type.indexOf('presentation') !== -1) {
                     return '<img src="/assets/browser/icon/powerpoint.png">';
                 }
-                if(file.file_type.indexOf('audio/')!== -1 ){
+                if (file.file_type.indexOf('audio/') !== -1) {
                     return '<img src="/assets/browser/icon/006-audio-file.png">';
                 }
 

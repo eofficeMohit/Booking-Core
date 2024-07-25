@@ -48,15 +48,15 @@ class General extends Seeder
                 ],
                 [
                     'name'  => 'admin_email',
-                    'val'   => 'contact@bookingcore.test',
+                    'val'   => 'contact@planner.test',
                     'group' => "general",
                 ], [
                     'name'  => 'email_from_name',
-                    'val'   => 'Booking Core',
+                    'val'   => 'Planner',
                     'group' => "general",
                 ], [
                     'name'  => 'email_from_address',
-                    'val'   => 'contact@bookingcore.test',
+                    'val'   => 'contact@planner.test',
                     'group' => "general",
                 ],
                 [
@@ -77,17 +77,17 @@ class General extends Seeder
 <a href="#"><i class="fa fa-google-plus"></i></a>
 </div>
 <span class="line"></span>
-<a href="mailto:contact@bookingcore.test">contact@bookingcore.test</a>',
+<a href="mailto:contact@planner.test">contact@planner.test</a>',
                     'group' => "general",
                 ],
                 [
                     'name'  => 'footer_text_left',
-                    'val'   => 'Copyright © 2019 by Booking Core',
+                    'val'   => 'Copyright © 2019 by Planner',
                     'group' => "general",
                 ],
                 [
                     'name'  => 'footer_text_right',
-                    'val'   => 'Booking Core',
+                    'val'   => 'Planner',
                     'group' => "general",
                 ],
                 [
@@ -112,7 +112,7 @@ class General extends Seeder
                 ],
                 [
                     'name' => 'page_contact_desc',
-                    'val' => "<!DOCTYPE html><html><head></head><body><h3>Booking Core</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
+                    'val' => "<!DOCTYPE html><html><head></head><body><h3>Planner</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
                     'group' => "general",
                 ],
                 [
@@ -234,7 +234,7 @@ class General extends Seeder
 
         DB::table('core_templates')->insert([
             'title'       => 'Home Tour Agency',
-            'content'     => '[{"type":"form_search_tour","name":"Tour: Form Search","model":{"title":"Love where you\'re going","sub_title":"Book incredible things to do around the world.","bg_image":20,"style":"carousel_v2","list_slider":[{"_active":true,"title":"Love where you\'re going","desc":"Book incredible things to do around the world.","bg_image":199}]},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_tours","name":"Tour: List Items","model":{"title":"Go to Venice","number":5,"style":"carousel_simple","category_id":"","location_id":"","order":"id","order_by":"asc","desc":"It is a long established fact that a reader will be distracted by the readable content of a page ...","is_featured":""},"component":"RegularBlock","open":true,"is_container":false},{"type":"call_to_action","name":"Call To Action","model":{"title":"Sale up for new year","sub_title":"Curabitur blandit tempus","link_title":"Read More","link_more":"#","bg_color":"","style":"style_2","bg_image":196},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_tours","name":"Tour: List Items","model":{"title":"Popular tour in the month","number":8,"style":"carousel","category_id":"","location_id":"","order":"id","order_by":"desc","desc":"Local Experiences You’ll Love ","is_featured":true},"component":"RegularBlock","open":true,"is_container":false},{"type":"call_to_action","name":"Call To Action","model":{"title":"Enjoy your holiday","sub_title":"Curabitur blandit tempus porttitor","link_title":"Explore","link_more":"#","style":"style_3","bg_color":"","bg_image":197},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_featured_item","name":"List Featured Item","model":{"list_item":[{"_active":true,"title":"1,000+ local guides","sub_title":"Morbi semper fames lobortis ac hac penatibus","icon_image":183},{"_active":true,"title":"Handcrafted experiences","sub_title":"Morbi semper fames lobortis ac hac penatibus","icon_image":187},{"_active":true,"title":"96% happy travelers","sub_title":"Morbi semper fames lobortis ac hac penatibus","icon_image":185}],"style":"style4"},"component":"RegularBlock","open":true,"is_container":false},{"type":"box_category_tour","name":"Tour: Box Category","model":{"title":"Top activity","desc":"One way to vertically center is to use my-auto","list_item":[{"_active":true,"category_id":"4","image_id":189},{"_active":true,"category_id":"3","image_id":190},{"_active":true,"category_id":"2","image_id":191},{"_active":true,"category_id":"1","image_id":192},{"_active":true,"category_id":"2","image_id":190}]},"component":"RegularBlock","open":true,"is_container":false},{"type":"client_feedback","name":"Client Feedback","model":{"title":"","image_id":198,"list_item":[{"_active":false,"title":"Babila Ebwélé","sub_title":"BookingCore","desc":"We had 10 days. Iguazu Falls, Rio, and Paraty. We had Orico as a guide for the first 4 days...he was fabulous.  "},{"_active":true,"title":"DoQuan","sub_title":"Travel","desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry"}]},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_news","name":"News: List Items","model":{"title":"Recent Articles","desc":" One way to vertically center is to use my-auto ","number":3,"category_id":"","order":"id","order_by":"asc"},"component":"RegularBlock","open":true,"is_container":false}]',
+            'content'     => '[{"type":"form_search_tour","name":"Tour: Form Search","model":{"title":"Love where you\'re going","sub_title":"Book incredible things to do around the world.","bg_image":20,"style":"carousel_v2","list_slider":[{"_active":true,"title":"Love where you\'re going","desc":"Book incredible things to do around the world.","bg_image":199}]},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_tours","name":"Tour: List Items","model":{"title":"Go to Venice","number":5,"style":"carousel_simple","category_id":"","location_id":"","order":"id","order_by":"asc","desc":"It is a long established fact that a reader will be distracted by the readable content of a page ...","is_featured":""},"component":"RegularBlock","open":true,"is_container":false},{"type":"call_to_action","name":"Call To Action","model":{"title":"Sale up for new year","sub_title":"Curabitur blandit tempus","link_title":"Read More","link_more":"#","bg_color":"","style":"style_2","bg_image":196},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_tours","name":"Tour: List Items","model":{"title":"Popular tour in the month","number":8,"style":"carousel","category_id":"","location_id":"","order":"id","order_by":"desc","desc":"Local Experiences You’ll Love ","is_featured":true},"component":"RegularBlock","open":true,"is_container":false},{"type":"call_to_action","name":"Call To Action","model":{"title":"Enjoy your holiday","sub_title":"Curabitur blandit tempus porttitor","link_title":"Explore","link_more":"#","style":"style_3","bg_color":"","bg_image":197},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_featured_item","name":"List Featured Item","model":{"list_item":[{"_active":true,"title":"1,000+ local guides","sub_title":"Morbi semper fames lobortis ac hac penatibus","icon_image":183},{"_active":true,"title":"Handcrafted experiences","sub_title":"Morbi semper fames lobortis ac hac penatibus","icon_image":187},{"_active":true,"title":"96% happy travelers","sub_title":"Morbi semper fames lobortis ac hac penatibus","icon_image":185}],"style":"style4"},"component":"RegularBlock","open":true,"is_container":false},{"type":"box_category_tour","name":"Tour: Box Category","model":{"title":"Top activity","desc":"One way to vertically center is to use my-auto","list_item":[{"_active":true,"category_id":"4","image_id":189},{"_active":true,"category_id":"3","image_id":190},{"_active":true,"category_id":"2","image_id":191},{"_active":true,"category_id":"1","image_id":192},{"_active":true,"category_id":"2","image_id":190}]},"component":"RegularBlock","open":true,"is_container":false},{"type":"client_feedback","name":"Client Feedback","model":{"title":"","image_id":198,"list_item":[{"_active":false,"title":"Babila Ebwélé","sub_title":"planner","desc":"We had 10 days. Iguazu Falls, Rio, and Paraty. We had Orico as a guide for the first 4 days...he was fabulous.  "},{"_active":true,"title":"DoQuan","sub_title":"Travel","desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry"}]},"component":"RegularBlock","open":true,"is_container":false},{"type":"list_news","name":"News: List Items","model":{"title":"Recent Articles","desc":" One way to vertically center is to use my-auto ","number":3,"category_id":"","order":"id","order_by":"asc"},"component":"RegularBlock","open":true,"is_container":false}]',
             'create_user' => '1',
             'created_at'  => date("Y-m-d H:i:s")
         ]);
@@ -321,7 +321,7 @@ class General extends Seeder
         $a->status = 'publish';
         $a->created_at = date("Y-m-d H:i:s");
         $a->content = '<h1>Privacy policy</h1>
-<p> This privacy policy (&quot;Policy&quot;) describes how the personally identifiable information (&quot;Personal Information&quot;) you may provide on the <a target="_blank" rel="nofollow" href="http://dev.bookingcore.co">dev.bookingcore.co</a> website (&quot;Website&quot; or &quot;Service&quot;) and any of its related products and services (collectively, &quot;Services&quot;) is collected, protected and used. It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy is a legally binding agreement between you (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;) and this Website operator (&quot;Operator&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;). By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.</p>
+<p> This privacy policy (&quot;Policy&quot;) describes how the personally identifiable information (&quot;Personal Information&quot;) you may provide on the <a target="_blank" rel="nofollow" href="http://dev.planner.co">dev.planner.co</a> website (&quot;Website&quot; or &quot;Service&quot;) and any of its related products and services (collectively, &quot;Services&quot;) is collected, protected and used. It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy is a legally binding agreement between you (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;) and this Website operator (&quot;Operator&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;). By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.</p>
 <h2>Automatic collection of information</h2>
 <p>When you open the Website, our servers automatically record information that your browser sends. This data may include information such as your device\'s IP address, browser type and version, operating system type and version, language preferences or the webpage you were visiting before you came to the Website and Services, pages of the Website and Services that you visit, the time spent on those pages, information you search for on the Website, access times and dates, and other statistics.</p>
 <p>Information collected automatically is used only to identify potential cases of abuse and establish statistical information regarding the usage and traffic of the Website and Services. This statistical information is not otherwise aggregated in such a way that would identify any particular user of the system.</p>
@@ -376,7 +376,7 @@ class General extends Seeder
 <h2>Acceptance of this policy</h2>
 <p>You acknowledge that you have read this Policy and agree to all its terms and conditions. By accessing and using the Website and Services you agree to be bound by this Policy. If you do not agree to abide by the terms of this Policy, you are not authorized to access or use the Website and Services.</p>
 <h2>Contacting us</h2>
-<p>If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may do so via the <a target="_blank" rel="nofollow" href="http://dev.bookingcore.co/contact">contact form</a></p>
+<p>If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may do so via the <a target="_blank" rel="nofollow" href="http://dev.planner.co/contact">contact form</a></p>
 <p>This document was last updated on October 6, 2020</p>';
         $a->save();
         $settings = [
@@ -407,7 +407,7 @@ class General extends Seeder
                 ],
                 [
                     'name'  => 'page_contact_desc',
-                    'val'   => "<!DOCTYPE html><html><head></head><body><h3>Booking Core</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
+                    'val'   => "<!DOCTYPE html><html><head></head><body><h3>Planner</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tell. + 00 222 444 33</p><p>Email. hello@yoursite.com</p><p>1355 Market St, Suite 900San, Francisco, CA 94103 United States</p></body></html>",
                     'group' => "general",
                 ],
                 [
@@ -472,7 +472,7 @@ class General extends Seeder
                 ],
                 [
                     'name'  => "site_title",
-                    'val'   => "Booking Core",
+                    'val'   => "Planner",
                     'group' => "general",
                 ],
                 [
@@ -482,17 +482,17 @@ class General extends Seeder
                 ],
                 [
                     'name'  => "site_title",
-                    'val'   => "Booking Core",
+                    'val'   => "Planner",
                     'group' => "general",
                 ],
                 [
                     'name'  => "email_header",
-                    'val'   => '<h1 class="site-title" style="text-align: center">Booking Core</h1>',
+                    'val'   => '<h1 class="site-title" style="text-align: center">Planner</h1>',
                     'group' => "general",
                 ],
                 [
                     'name'  => "email_footer",
-                    'val'   => '<p class="" style="text-align: center">&copy; 2019 Booking Core. All rights reserved</p>',
+                    'val'   => '<p class="" style="text-align: center">&copy; 2019 Planner. All rights reserved</p>',
                     'group' => "general",
                 ],
                 [
@@ -504,9 +504,9 @@ class General extends Seeder
                     'name'  => "user_content_email_registered",
                     'val'   => '<h1 style="text-align: center">Welcome!</h1>
                     <h3>Hello [first_name] [last_name]</h3>
-                    <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>
+                    <p>Thank you for signing up with Planner! We hope you enjoy your time with us.</p>
                     <p>Regards,</p>
-                    <p>Booking Core</p>',
+                    <p>Planner</p>',
                     'group' => "user",
                 ],
                 [
@@ -521,7 +521,7 @@ class General extends Seeder
                     <p>Full name: [first_name] [last_name]</p>
                     <p>Email: [email]</p>
                     <p>Regards,</p>
-                    <p>Booking Core</p>',
+                    <p>Planner</p>',
                     'group' => "user",
                 ],
                 [
@@ -533,7 +533,7 @@ class General extends Seeder
                     <p>If you did not request a password reset, no further action is required.
                     </p>
                     <p>Regards,</p>
-                    <p>Booking Core</p>',
+                    <p>Planner</p>',
                     'group' => "user",
                 ],
                 [
@@ -681,7 +681,7 @@ class General extends Seeder
                             <p>Content:[note]</p>
                             <p>Service:[service_link]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>
+                            <p>Planner</p>
                             </div>",
                 'group' => "enquiry",
             ],
@@ -701,7 +701,7 @@ class General extends Seeder
                             <p>Service:[service_link]</p>
                             <p>Vendor:[vendor_link]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>",
+                            <p>Planner</p>",
                 'group' => "enquiry",
             ],
                 [
@@ -746,9 +746,9 @@ class General extends Seeder
                 'name'  => 'vendor_content_email_registered',
                 'val'   => '<h1 style="text-align: center;">Welcome!</h1>
                             <h3>Hello [first_name] [last_name]</h3>
-                            <p>Thank you for signing up with Booking Core! We hope you enjoy your time with us.</p>
+                            <p>Thank you for signing up with Planner! We hope you enjoy your time with us.</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>',
+                            <p>Planner</p>',
                 'group' => 'vendor'
             ],[
                 'name'  => 'admin_enable_mail_vendor_registered',
@@ -763,7 +763,7 @@ class General extends Seeder
                             <p>Registration date: [created_at]</p>
                             <p>You can approved the request here: [link_approved]</p>
                             <p>Regards,</p>
-                            <p>Booking Core</p>',
+                            <p>Planner</p>',
                 'group' => 'vendor'
             ],
                 [
@@ -788,9 +788,9 @@ class General extends Seeder
                 ],
                 [
                     'name'  => "invoice_company_info",
-                    'val'   => "<p><span style=\"font-size: 14pt;\"><strong>Booking Core Company</strong></span></p>
+                    'val'   => "<p><span style=\"font-size: 14pt;\"><strong>Planner Company</strong></span></p>
                                 <p>Ha Noi, Viet Nam</p>
-                                <p>www.bookingcore.co</p>",
+                                <p>www.planner.co</p>",
                     'group' => "booking",
                 ],
             ];

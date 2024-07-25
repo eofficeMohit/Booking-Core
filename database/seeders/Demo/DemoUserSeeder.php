@@ -17,7 +17,7 @@ class DemoUserSeeder extends Seeder
     {
         $active_theme = ThemeManager::current();
         $active_theme = strtolower($active_theme);
-        $active_theme = ($active_theme == "bc") ? "bookingcore" : $active_theme;
+        $active_theme = ($active_theme == "bc") ? "planner" : $active_theme;
 
         $user = new User();
         $data = [

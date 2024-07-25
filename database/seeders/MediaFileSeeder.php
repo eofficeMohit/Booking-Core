@@ -21,7 +21,7 @@ class MediaFileSeeder extends Seeder
             ['file_name' => 'ico_localguide', 'file_path' => 'demo/general/ico_localguide.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
             ['file_name' => 'ico_maps', 'file_path' => 'demo/general/ico_maps.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
             ['file_name' => 'ico_paymethod', 'file_path' => 'demo/general/ico_paymethod.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
-            ['file_name' => 'logo', 'file_path' => 'demo/general/logo.svg', 'file_type' => 'image/svg+xml', 'file_extension' => 'svg'],
+            ['file_name' => 'logo', 'file_path' => 'demo/general/logo.png', 'file_type' => 'image/pngl', 'file_extension' => 'png'],
             ['file_name' => 'bg_contact', 'file_path' => 'demo/general/bg-contact.jpg', 'file_type' => 'image/jpeg', 'file_extension' => 'jpg'],
             ['file_name' => 'favicon', 'file_path' => 'demo/general/favicon.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
             ['file_name' => 'thumb-vendor-register', 'file_path' => 'demo/general/thumb-vendor-register.jpg', 'file_type' => 'image/jpeg', 'file_extension' => 'jpg'],
@@ -211,12 +211,12 @@ class MediaFileSeeder extends Seeder
 
             ['file_name' => 'call-to-action-bg-1', 'file_path' => 'demo/general/call-to-action-bg-1.jpg', 'file_type' => 'image/jpg', 'file_extension' => 'jpg'],
             ['file_name' => 'call-to-action-bg-2', 'file_path' => 'demo/general/call-to-action-bg-2.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
-            ['file_name' => 'call-to-action-bg-3', 'file_path' => 'demo/general/call-to-action-bg-3.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
+            ['file_name' => 'call-to-action-bg-3', 'file_path' => 'demo/general/call-to-action-bg-3.jpg', 'file_type' => 'image/jpg', 'file_extension' => 'jpg'],
 
             ['file_name' => 'customer-feedback', 'file_path' => 'demo/general/customer-feedback.jpg', 'file_type' => 'image/jpg', 'file_extension' => 'jpg'],
             ['file_name' => 'customer-feedback-2', 'file_path' => 'demo/general/customer-feedback-2.jpg', 'file_type' => 'image/jpg', 'file_extension' => 'jpg'],
 
-            ['file_name' => 'logo-white', 'file_path' => 'demo/general/logo_white.svg', 'file_type' => 'image/svg', 'file_extension' => 'svg'],
+            ['file_name' => 'logo-white', 'file_path' => 'demo/general/logo_white.png', 'file_type' => 'image/png', 'file_extension' => 'png'],
         ]);
     }
 }

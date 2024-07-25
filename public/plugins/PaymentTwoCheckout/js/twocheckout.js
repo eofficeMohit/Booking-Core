@@ -1,31 +1,31 @@
 jQuery(function ($) {
 
-    if (bookingCore_gateways_twocheckout.twocheckout_publishable_key === '') {
+    if (planner_gateways_twocheckout.twocheckout_publishable_key === '') {
         console.log("TwoCheckout: Publishable not found");
         return false;
     }
 
-    //TCO.loadPubKey(bookingCore_gateways_twocheckout.twocheckout_publishable_key);
+    //TCO.loadPubKey(planner_gateways_twocheckout.twocheckout_publishable_key);
 
     $("#bravo_twocheckout_card_name,#bravo_twocheckout_card_number,#bravo_twocheckout_card_expiry_month,#bravo_twocheckout_card_expiry_year,#bravo_twocheckout_card_cvc").change(function () {
         $(".card_twocheckout_msg").html("");
         var request_now = true;
-        if($("#bravo_twocheckout_card_name").val() === ""){
+        if ($("#bravo_twocheckout_card_name").val() === "") {
             request_now = false;
         }
-        if($("#bravo_twocheckout_card_number").val() === ""){
+        if ($("#bravo_twocheckout_card_number").val() === "") {
             request_now = false;
         }
-        if($("#bravo_twocheckout_card_expiry_month").val() === ""){
+        if ($("#bravo_twocheckout_card_expiry_month").val() === "") {
             request_now = false;
         }
-        if($("#bravo_twocheckout_card_expiry_year").val() === ""){
+        if ($("#bravo_twocheckout_card_expiry_year").val() === "") {
             request_now = false;
         }
-        if($("#bravo_twocheckout_card_cvc").val() === ""){
+        if ($("#bravo_twocheckout_card_cvc").val() === "") {
             request_now = false;
         }
-        if(request_now){
+        if (request_now) {
             tokenRequest();
         }
     });
@@ -37,8 +37,8 @@ jQuery(function ($) {
         var expiry_month = $('#bravo_twocheckout_card_expiry_month').val();
         var expiry_year = $('#bravo_twocheckout_card_expiry_year').val();
         var args = {
-            sellerId: bookingCore_gateways_twocheckout.twocheckout_account_number,
-            publishableKey: bookingCore_gateways_twocheckout.twocheckout_publishable_key,
+            sellerId: planner_gateways_twocheckout.twocheckout_account_number,
+            publishableKey: planner_gateways_twocheckout.twocheckout_publishable_key,
             ccNo: card_number,
             cvv: card_cvc,
             expMonth: expiry_month,

@@ -61,7 +61,7 @@
                     file_extension:'',
                 };
                 $.ajax({
-                    url:bookingCore.media.get_file+'?id='+id,
+                    url:planner.media.get_file+'?id='+id,
                     dataType:'json',
                     success:function (json) {
                         if(json.id){

@@ -15,7 +15,7 @@ class BuyController extends Controller
             'version' => config('app.version'),
             'theme'   => ThemeManager::current()
         ];
-        return redirect('https://bookingcore.co/product/buy/pro?code=' . base64_encode(json_encode($data)));
+        return redirect('https://planner.co/product/buy/pro?code=' . base64_encode(json_encode($data)));
     }
 
 }

@@ -27,7 +27,7 @@
 								file_type:'video',
 								onSelect:function (files) {
 									if(files.length)
-										callback(bookingCore.url+'/media/preview/'+files[0].id);
+										callback(planner.url+'/media/preview/'+files[0].id);
 								},
 							});
 						}
@@ -51,7 +51,7 @@
 								file_type:'video',
 								onSelect:function (files) {
 									if(files.length)
-										callback(bookingCore.url+'/media/preview/'+files[0].id);
+										callback(planner.url+'/media/preview/'+files[0].id);
 								},
 							});
 						}

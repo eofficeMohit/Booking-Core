@@ -1,7 +1,7 @@
 import Vue from 'vue';
 // import {VueNestableHandle, VueNestable} from 'vue-nestable'
 // import {DraggableTree} from 'vue-draggable-nested-tree'
-import {Tree,Draggable} from 'he-tree-vue'
+import { Tree, Draggable } from 'he-tree-vue'
 // import draggable from 'vuedraggable'
 // import NestedDraggable from './components/nested-draggable.vue'
 
@@ -17,7 +17,7 @@ import {Tree,Draggable} from 'he-tree-vue'
         components: {
             // VueNestable,
             // VueNestableHandle,
-            DraggableTree:Tree.mixPlugins([Draggable]),
+            DraggableTree: Tree.mixPlugins([Draggable]),
             // draggable,
             // NestedDraggable
         },
@@ -54,7 +54,7 @@ import {Tree,Draggable} from 'he-tree-vue'
             searchItems(type) {
                 // if(!type.q) return;
                 $.ajax({
-                    url: bookingCore.admin_url + '/module/core/menu/searchTypeItems',
+                    url: planner.admin_url + '/module/core/menu/searchTypeItems',
                     data: {
                         class: type.class,
                         q: type.q
@@ -74,7 +74,7 @@ import {Tree,Draggable} from 'he-tree-vue'
             reloadItems() {
                 var me = this;
                 $.ajax({
-                    url: bookingCore.admin_url + '/module/core/menu/getItems',
+                    url: planner.admin_url + '/module/core/menu/getItems',
                     dataType: 'json',
                     type: 'post',
                     data: {
@@ -93,7 +93,7 @@ import {Tree,Draggable} from 'he-tree-vue'
             reloadTypes() {
                 var me = this;
                 $.ajax({
-                    url: bookingCore.admin_url + '/module/core/menu/getTypes',
+                    url: planner.admin_url + '/module/core/menu/getTypes',
                     dataType: 'json',
                     type: 'post',
                     data: {},
@@ -143,12 +143,12 @@ import {Tree,Draggable} from 'he-tree-vue'
                 this.custom_name = '';
                 this.custom_url = '';
             },
-            parseMenuItems:function(origins){
+            parseMenuItems: function (origins) {
                 var items = [];
 
-                for(var i  = 0; i < origins.length; i++){
+                for (var i = 0; i < origins.length; i++) {
                     var item = origins[i];
-                    var tmp = Object.assign({},item);
+                    var tmp = Object.assign({}, item);
 
                     delete tmp._vm;
                     delete tmp.parent;
@@ -159,7 +159,7 @@ import {Tree,Draggable} from 'he-tree-vue'
                     delete tmp.innerBackClass;
                     delete tmp.innerBackStyle;
 
-                    if(item.children){
+                    if (item.children) {
                         tmp.children = this.parseMenuItems(item.children);
                     }
 
@@ -176,7 +176,7 @@ import {Tree,Draggable} from 'he-tree-vue'
                 var items = this.parseMenuItems(this.items);
 
                 $.ajax({
-                    url: bookingCore.admin_url + '/module/core/menu/store',
+                    url: planner.admin_url + '/module/core/menu/store',
                     dataType: 'json',
                     type: 'post',
                     data: {
@@ -184,7 +184,7 @@ import {Tree,Draggable} from 'he-tree-vue'
                         items: JSON.stringify(items),
                         name: this.name,
                         locations: this.locations,
-                        lang:current_menu_lang
+                        lang: current_menu_lang
                     },
                     success: function (res) {
                         if (res.message) {
@@ -208,7 +208,7 @@ import {Tree,Draggable} from 'he-tree-vue'
                     }
                 })
             },
-            deleteMenuItem(e, item,tree,path) {
+            deleteMenuItem(e, item, tree, path) {
                 e.preventDefault();
                 tree.removeNodeByPath(path);
             }

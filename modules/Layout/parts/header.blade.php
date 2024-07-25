@@ -1,5 +1,6 @@
 <div class="bravo_header {{ setting_item('enable_header_sticky',0) == 1 ? "has_sticky" :""  }}">
     <div class="{{$container_class ?? 'container'}}">
+      
         <div class="content">
             <div class="header-left">
                 <a href="{{url(app_get_locale(false,'/'))}}" class="bravo-logo">

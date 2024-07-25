@@ -28,9 +28,9 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-import BookingCoreUploader from '../../admin/js/ckeditor/uploader';
+import plannerUploader from '../../admin/js/ckeditor/uploader';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -57,7 +57,7 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 
 
-    BookingCoreUploader
+	plannerUploader
 ];
 
 // Editor configuration.
@@ -78,7 +78,7 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 
-			'BookingCoreUploader'
+			'plannerUploader'
 		]
 	},
 	image: {

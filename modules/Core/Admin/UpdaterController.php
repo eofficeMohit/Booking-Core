@@ -45,7 +45,7 @@ class UpdaterController extends  AdminController
             'envato_username'=>setting_item('envato_username'),
             'action'=>'check_update',
             'domain'=>\request()->getHost(),
-            'product'=>'bookingcore',
+            'product'=>'planner',
         ]);
 
         $data_json =  json_decode($data,true);
@@ -79,7 +79,7 @@ class UpdaterController extends  AdminController
 
         $updater_latest_version = setting_item('updater_latest_version');
         if(empty($updater_latest_version) or version_compare(config('app.version'),$updater_latest_version,'>=')){
-            return $this->sendError(__("You are using latest version of Booking Core"));
+            return $this->sendError(__("You are using latest version of Planner"));
         }
 
         if(!class_exists('\ZipArchive'))
@@ -101,7 +101,7 @@ class UpdaterController extends  AdminController
             'envato_username'=>setting_item('envato_username'),
             'action'=>'get_update',
             'domain'=>\request()->getHost(),
-            'product'=>'bookingcore'
+            'product'=>'planner'
         ]);
 
         $data_json =  json_decode($data,true);

@@ -51,11 +51,11 @@ $(document).on('hidden.bs.modal', '.modal', function () {
 });
 
 // Template
-if(document.getElementById('lecture_management')){
+if (document.getElementById('lecture_management')) {
     CourseLectures();
 }
 
-window.bookingCoreApp = {
+window.plannerApp = {
     showSuccess: function (configs) {
         var args = {};
         if (typeof configs == 'object') {

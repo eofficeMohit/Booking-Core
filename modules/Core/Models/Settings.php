@@ -28,6 +28,7 @@ class Settings extends BaseModel
 
     public static function item($item, $default = false)
     {
+
         $value = Cache::rememberForever('setting_' . $item, function () use ($item ,$default) {
             $val = Settings::where('name', $item)->first();
             return $val?$val['val']:'';

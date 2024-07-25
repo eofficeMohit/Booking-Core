@@ -1,8 +1,8 @@
 jQuery(document).ready(function ($) {
     'use strict';
-    var stripePublishKey = bookingCore_gateways_stripe.stripe_publishable_key;
-    if (bookingCore_gateways_stripe.stripe_enable_sandbox === "1") {
-        stripePublishKey = bookingCore_gateways_stripe.stripe_test_publishable_key;
+    var stripePublishKey = planner_gateways_stripe.stripe_publishable_key;
+    if (planner_gateways_stripe.stripe_enable_sandbox === "1") {
+        stripePublishKey = planner_gateways_stripe.stripe_test_publishable_key;
     }
     if (stripePublishKey === '') {
         return false;

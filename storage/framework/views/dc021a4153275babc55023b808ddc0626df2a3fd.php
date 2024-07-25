@@ -3,7 +3,7 @@
         <meta name="robots" content="noindex">
     <?php endif; ?>
     <?php
-        $site_title = setting_item_with_lang('site_title',false,'Booking Core');
+        $site_title = setting_item_with_lang('site_title',false,'Planner');
         $page_title = $seo_meta['seo_title'] ?? $seo_meta['service_title'] ?? $page_title ?? "";
         if(!empty($page_title) and empty($seo_meta['is_homepage'])){
             $page_title .= " - ".$site_title;
@@ -32,9 +32,9 @@
 <?php else: ?>
     <?php
         if(!empty($page_title)){
-            $page_title .= " - ".setting_item_with_lang('site_title' ,false,'Booking Core');
+            $page_title .= " - ".setting_item_with_lang('site_title' ,false,'Planner');
         }else{
-            $page_title = setting_item_with_lang('site_title' ,false,'Booking Core');
+            $page_title = setting_item_with_lang('site_title' ,false,'Planner');
         }
     ?>
     <title><?php echo e($page_title); ?></title>

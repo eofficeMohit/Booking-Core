@@ -4,7 +4,7 @@
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
-                Booking Core
+                Planner
                 <span class="badge badge-warning">PRO</span>
             </div>
             <div class="card-body p-0">

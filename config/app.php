@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Booking Core'),
+    'name' => env('APP_NAME', 'Planner System'),
 
     /*
     |--------------------------------------------------------------------------
@@ -229,5 +229,5 @@ return [
     'version' => '3.4.2',
     'asset_version' => env('APP_ASSET_VERSION', '3.4.0'),
 
-    'updater_url' => 'http://check.bookingcore.co/updater.php',
+    'updater_url' => 'http://check.planner.co/updater.php',
 ];

@@ -10,48 +10,48 @@ return [
     'item_url'=>'https://codecanyon.net/item/booking-core-ultimate-booking-system/24043972',
     'list_demo'=>[
         [
-            'url'=>'https://sandbox.bookingcore.co',
+            'url'=>'https://sandbox.planner.co',
             'name'=>'Homepage',
             'thumb'=>'img/demo/home.png',
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/tour',
+            'url'=>'https://sandbox.planner.co/tour',
             'name'=>'Tour Search',
             'thumb'=>'img/demo/tour.png'
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/tour/paris-vacation-travel',
+            'url'=>'https://sandbox.planner.co/tour/paris-vacation-travel',
             'name'=>'Single Tour',
             'thumb'=>'img/demo/tour_single.png'
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/en/page/space',
+            'url'=>'https://sandbox.planner.co/en/page/space',
             'name'=>'Home Space',
             'thumb'=>'img/demo/home-space.png',
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/en/space',
+            'url'=>'https://sandbox.planner.co/en/space',
             'name'=>'Space Search',
             'thumb'=>'img/demo/space-search.png'
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/en/space/stay-greenwich-village',
+            'url'=>'https://sandbox.planner.co/en/space/stay-greenwich-village',
             'name'=>'Single Space',
             'thumb'=>'img/demo/single-space.png'
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/tour?_layout=map',
+            'url'=>'https://sandbox.planner.co/tour?_layout=map',
             'name'=>'Search Map',
             'thumb'=>'img/demo/tour_map.png',
             'class'=>'col-lg-8 col-md-12 col-sm-12'
         ],
         [
-            'url'=>'https://sandbox.bookingcore.co/news',
+            'url'=>'https://sandbox.planner.co/news',
             'name'=>'Blog List',
             'thumb'=>'img/demo/news.png'
         ],
 //        [
-//            'url'=>'https://sandbox.bookingcore.co/contact',
+//            'url'=>'https://sandbox.planner.co/contact',
 //            'name'=>'Contact Page',
 //            'thumb'=>'img/demo/contact.png'
 //        ],

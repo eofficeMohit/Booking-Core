@@ -1,0 +1,17 @@
+[2024-06-19 00:25:49] local.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Summer Breeze was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Mohit Jamwal\">",
+    "link": "http:\/\/127.0.0.1:8000\/admin\/module\/boat?id=2",
+    "idNotification": "33ee794f-7cc8-43b1-ae8d-be23ac979cdc",
+    "socket": null
+}  
+[2024-06-19 00:25:49] local.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-1] with payload:
+{
+    "message": "Summer Breeze was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Vendor 01\">",
+    "link": "http:\/\/127.0.0.1:8000\/user\/boat?id=2",
+    "idNotification": "ace62ff6-65cd-47b4-8052-2efbe61f66a5",
+    "userId": 1,
+    "socket": null
+}  

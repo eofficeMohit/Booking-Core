@@ -7,7 +7,7 @@ class ThemeProvider extends \Themes\Base\ThemeProvider
 {
 
     public static $version = '3.5.1';
-    public static $name = 'Booking Core';
+    public static $name = 'Planner';
     public static $seeder = DatabaseSeeder::class;
 
     public function register()

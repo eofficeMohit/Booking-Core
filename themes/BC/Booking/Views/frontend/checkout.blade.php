@@ -31,7 +31,7 @@
     <script type="text/javascript">
         jQuery(function () {
             $.ajax({
-                'url': bookingCore.url + '{{$is_api ? '/api' : ''}}/booking/{{$booking->code}}/check-status',
+                'url': planner.url + '{{$is_api ? '/api' : ''}}/booking/{{$booking->code}}/check-status',
                 'cache': false,
                 'type': 'GET',
                 success: function (data) {
@@ -75,7 +75,7 @@
                 parent.find(".group-form .fa-spin").removeClass("d-none");
                 parent.find(".message").html('');
                 $.ajax({
-                    'url': bookingCore.url + '/booking/{{$booking->code}}/apply-coupon',
+                    'url': planner.url + '/booking/{{$booking->code}}/apply-coupon',
                     'data': parent.find('input,textarea,select').serialize(),
                     'cache': false,
                     'method':"post",
@@ -101,7 +101,7 @@
                 var parentItem = $(this).closest('.item');
                 parentItem.find(".fa-spin").removeClass("d-none");
                 $.ajax({
-                    'url': bookingCore.url + '/booking/{{$booking->code}}/remove-coupon',
+                    'url': planner.url + '/booking/{{$booking->code}}/remove-coupon',
                     'data': {
                         coupon_code:$(this).attr('data-code')
                     },

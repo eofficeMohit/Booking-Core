@@ -22,7 +22,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 @include ('Media::browser')
 <script>
-    var bookingCore  = {
+    var planner  = {
         url:'{{url('/')}}',
         map_provider:'{{setting_item('map_provider')}}',
         map_gmap_key:'{{setting_item('map_gmap_key')}}'

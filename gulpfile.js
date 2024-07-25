@@ -1,21 +1,21 @@
 const gulp = require('gulp');
 const zip = require('gulp-zip');
-const { series,parallel } = require('gulp');
+const { series, parallel } = require('gulp');
 //const del  = require('del');
 const rename = require('gulp-rename');
 var clean = require('gulp-clean');
 
 function compressPackage() {
 	return gulp.src([
-		'../builds/booking-core/**',
-		'../builds/booking-core/**/.**',
+		'../builds/Planner-core/**',
+		'../builds/Planner-core/**/.**',
 	])
-		.pipe(zip('booking-core.zip'))
+		.pipe(zip('Planner-core.zip'))
 		.pipe(gulp.dest('../builds/'));
 
 }
 function copyPackage() {
-	//del('../builds/booking-core/*/**',{force:true});
+	//del('../builds/Planner-core/*/**',{force:true});
 
 	return gulp.src([
 		'**',
@@ -35,14 +35,14 @@ function copyPackage() {
 		'!storage/framework/views/*.php',
 		'!public/uploads/0000/**',
 	])
-		.pipe(gulp.dest('../builds/booking-core'));
+		.pipe(gulp.dest('../builds/Planner-core'));
 }
 function makeEnv() {
 	return gulp.src([
 		'.env.example',
 	])
 		.pipe(rename('.env'))
-		.pipe(gulp.dest('../builds/booking-core'));
+		.pipe(gulp.dest('../builds/Planner-core'));
 }
 
 function backend(cb) {
@@ -52,10 +52,10 @@ function frontend(cb) {
 	cb();
 }
 
-function cleanBuildFolder(){
-	return gulp.src('../builds/booking-core', {read: false, allowEmpty: true })
-.pipe(clean({force: true}));
+function cleanBuildFolder() {
+	return gulp.src('../builds/Planner-core', { read: false, allowEmpty: true })
+		.pipe(clean({ force: true }));
 }
-exports.default = series(parallel(backend,frontend),cleanBuildFolder,copyPackage);
-exports.test = series(parallel(backend,frontend),cleanBuildFolder,copyPackage);
+exports.default = series(parallel(backend, frontend), cleanBuildFolder, copyPackage);
+exports.test = series(parallel(backend, frontend), cleanBuildFolder, copyPackage);
 exports.zip = series(compressPackage);

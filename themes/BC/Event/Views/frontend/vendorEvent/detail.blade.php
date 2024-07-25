@@ -94,7 +94,7 @@
                         $("input[name=map_zoom]").attr("value", zoom);
                     });
 
-                    if(bookingCore.map_provider === "gmap"){
+                    if(planner.map_provider === "gmap"){
                         engineMap.searchBox($('#customPlaceAddress'),function (dataLatLng) {
                             engineMap.clearMarkers();
                             engineMap.addMarker(dataLatLng, {

@@ -19,7 +19,7 @@ export default function () {
             selectedBlockId: '',
             frame: null,
             showAddBlock: false,
-            lastSaved:current_last_saved
+            lastSaved: current_last_saved
         },
         mounted() {
             var me = this;
@@ -90,7 +90,7 @@ export default function () {
                 var me = this;
 
                 jQuery.ajax({
-                    url: bookingCore.admin_url + '/module/template/getBlocks',
+                    url: planner.admin_url + '/module/template/getBlocks',
                     dataType: 'json',
                     type: 'get',
                     success: function (res) {
@@ -121,7 +121,7 @@ export default function () {
                 this.onSaving = true;
 
                 $.ajax({
-                    url: bookingCore.admin_url + '/module/template/store',
+                    url: planner.admin_url + '/module/template/store',
                     dataType: 'json',
                     type: 'post',
                     data: {
@@ -141,9 +141,9 @@ export default function () {
                             window.location.href = res.url;
                         }
 
-                        window.setTimeout(()=>{
+                        window.setTimeout(() => {
                             me.message.content = '';
-                        },3000)
+                        }, 3000)
                     },
                     error: function (e) {
                         me.onSaving = false;

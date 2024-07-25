@@ -1,5 +1,6 @@
 <div class="bravo_header <?php echo e(setting_item('enable_header_sticky',0) == 1 ? "has_sticky" :""); ?>">
     <div class="<?php echo e($container_class ?? 'container'); ?>">
+      
         <div class="content">
             <div class="header-left">
                 <a href="<?php echo e(url(app_get_locale(false,'/'))); ?>" class="bravo-logo">

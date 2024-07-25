@@ -1,0 +1,51 @@
+[2024-06-18 23:13:54] local.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles) was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Mohit Jamwal\">",
+    "link": "http:\/\/127.0.0.1:8000\/admin\/module\/event?id=5",
+    "idNotification": "fb68033f-7976-4740-b351-79d57db7b31d",
+    "socket": null
+}  
+[2024-06-18 23:13:54] local.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-4] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles) was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Kaytlyn Alvapriya\">",
+    "link": "http:\/\/127.0.0.1:8000\/user\/event?id=5",
+    "idNotification": "43d0a64d-e126-4385-bf6e-a0e3cda75223",
+    "userId": 4,
+    "socket": null
+}  
+[2024-06-18 23:15:29] local.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles) was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Mohit Jamwal\">",
+    "link": "http:\/\/127.0.0.1:8000\/admin\/module\/event?id=5",
+    "idNotification": "36485811-154a-4d4f-bf98-24b126b78321",
+    "socket": null
+}  
+[2024-06-18 23:15:29] local.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-4] with payload:
+{
+    "message": "Southwest States (Ex Los Angeles) was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Kaytlyn Alvapriya\">",
+    "link": "http:\/\/127.0.0.1:8000\/user\/event?id=5",
+    "idNotification": "956e875b-e003-4398-ab2a-b6b7a72f41f3",
+    "userId": 4,
+    "socket": null
+}  
+[2024-06-18 23:15:48] local.INFO: Broadcasting [App\Events\PusherNotificationAdminEvent] on channels [admin-channel] with payload:
+{
+    "message": "Pink Crescent Moon Events was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Mohit Jamwal\">",
+    "link": "http:\/\/127.0.0.1:8000\/admin\/module\/event?id=8",
+    "idNotification": "faa54183-df3d-490a-ba02-e137afcd88ee",
+    "socket": null
+}  
+[2024-06-18 23:15:48] local.INFO: Broadcasting [App\Events\PusherNotificationPrivateEvent] on channels [user-channel-4] with payload:
+{
+    "message": "Pink Crescent Moon Events was updated to Publish by Mohit Jamwal",
+    "avatar": "<img class=\"image-responsive\" src=\"http:\/\/127.0.0.1:8000\/images\/avatar.png\" alt=\"Kaytlyn Alvapriya\">",
+    "link": "http:\/\/127.0.0.1:8000\/user\/event?id=8",
+    "idNotification": "a834aeef-5922-49cc-863c-6cb45c310498",
+    "userId": 4,
+    "socket": null
+}  

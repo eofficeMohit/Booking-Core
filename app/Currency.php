@@ -34,6 +34,7 @@ class Currency
             ]
         ];
         $extra = array_merge(setting_item_array('extra_currency'),$extra);
+       
         return $extra;
     }
 
@@ -47,7 +48,7 @@ class Currency
         }
 
         $active = static::getActiveCurrency();
-
+        
         foreach ($active as $item){
             if($code == $item['currency_main'])
             {
@@ -93,6 +94,9 @@ class Currency
             switch ($currency_format) {
                 case "right_space";
                     return $s . ' ' . $currency['symbol'];
+                    break;
+                case "indian";
+                    return $currency['symbol'] . ' ' . $s;
                     break;
                 case "left";
                     return $currency['symbol'] . $s;
